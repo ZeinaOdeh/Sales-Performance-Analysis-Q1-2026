@@ -12,32 +12,31 @@ customer behavior, category performance, and progress toward a sales target.
 The objective of this project was to transform relational sales data into
 an interactive dashboard that helps identify:
 
-- Overall sales performance
-- Monthly sales trends
-- Top-performing products
-- Category performance
-- Customer performance
-- Customer type behavior
-- Month-over-month sales growth
-- Progress toward the sales target
+- Understanding overall sales performance
+- Identifying the best-performing product categories
+- Identifying top products and customers
+- Analyzing monthly sales trends
+- Comparing customer types
+- Measuring month-over-month (MoM) growth
+- Tracking performance against a sales target
+- Providing interactive customer and product-level analysis
 
 ## 🛠️ Tools & Technologies
 
-- Power BI
-- Power Query
-- DAX
-- PostgreSQL
-- SQL
-- Data Modeling
+- **PostgreSQL** — Data storage and SQL analysis
+- **SQL** — Data querying and analysis
+- **Power Query** — Data transformation and preparation
+- **Power BI** — Data modeling and visualization
+- **DAX** — Measures, KPIs, and time-intelligence calculations
 
 ## 🗂️ Data Model
 
 The project uses a relational data model consisting of:
 
-- Customers
-- Orders
-- Products
-- DateTable
+- **Customers** — customer information and customer type
+- **Products** — product information, categories, and prices
+- **Orders** — order dates, quantities, and discounts
+- **DateTable** — date dimension used for time-based analysis
 
 Relationships were created between customers, products, orders, and the
 date dimension to support accurate analysis.
@@ -91,6 +90,27 @@ The project includes measures for:
 - Target Achievement %
 - Top N analysis
 
+## 🗄️ SQL Analysis
+
+The underlying data was stored and analyzed in PostgreSQL.
+
+SQL techniques used include:
+
+- SELECT
+- WHERE
+- JOIN
+- GROUP BY
+- HAVING
+- Aggregate functions
+- CASE WHEN
+- Calculated values
+- Customer analysis
+- Product analysis
+- Category analysis
+- Monthly sales analysis
+- ORDER BY
+- LIMIT
+
 ## 📷 Dashboard
 
 ### 1. Sales Performance Dashboard
@@ -107,6 +127,15 @@ The project includes measures for:
 
 ## 💡 What I Learned
 
-Through this project, I practiced building an end-to-end data analysis
-workflow, from relational data in PostgreSQL to data transformation,
-modeling, DAX calculations, and interactive Power BI visualization.
+Through this project, I practiced an end-to-end data analysis workflow, including:
+
+- Working with relational databases
+- Writing SQL queries
+- Connecting PostgreSQL to Power BI
+- Data cleaning and transformation with Power Query
+- Building relationships and a date table
+- Creating DAX measures
+- Applying filter context and time intelligence
+- Creating interactive dashboards
+- Using drill-through analysis
+- Translating data into business insights
